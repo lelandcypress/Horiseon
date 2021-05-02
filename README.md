@@ -30,6 +30,4 @@ Step 16: git push
 Step 17: ?
 Step 18: Profits
 
-Objectived
-
 Objective: Complete Code Refactoring Assignment
