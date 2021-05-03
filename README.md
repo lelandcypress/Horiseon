@@ -32,11 +32,23 @@ Step 18: Profits
 
 Objective: Complete Code Refactoring Assignment
 
-User Story
-Convering HTML tag to Semantic
-    Line 11 Updated <div> to <header>
-    Line 26 Updated </div> to </header>
+
+Converting HTML tags to Semantic tags
+    
+    index.html: Line 11 and Line 26 Updated <div></div> to <header></header>
+
+    
+    index.html: Line 10 and Line 80 Updated <body></body> tags to <main></main>
+    style.css: Updated line 7 to css linking was preserved
+
+
+    index.html: Line 13 and Line 25 Updated <div></div> to <nav></nav>
+    style.css: Updated lines 27, 35, 39 to ensure css linking was preserved
+
+    Line 28 Updated <div> to <main>
+    Line 50 Updated <div> to </main>
+
     Line 74 Updated <div> to <footer>
     Line 79 Updated </div> to </footer>
+    
 
-Worked on Line 6 to make sure style.css was properly linking to index.html 
