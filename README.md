@@ -1,109 +1,102 @@
-SMU Full Stack Flex Bootcamp April 2021
-This is the first homework assignment, which was officially kicked off May 1st 2021.
+Horiseon HTML Refactoring Project
 
-Objective:
-Demonstrate proficiency in Git Hub Repository Management, and Code Refactoring.
+Objective: We have been contracted by Horiseon to update their HTML to include semantic tags, improve accessibility, and ensure stylesheet flows in accordance with best practices.
 
-Acceptance criteria for Repository Management :
-- Build Horiseon Repository 
-- Build repository structure in GitBash
-- Commit and push changes 
+CUSTOMER USER STORY
+```
+AS A marketing agency
+I WANT a codebase that follows accessibility standards
+SO THAT our own site is optimized for search engines
+```
 
-Summary: Detailed breakdown of steps and GitBash Commands used
+Acceptance Criteria
+```
 
-Step 1: Build Horiseon.git repository on github.com
-Step 2: Open GitBash terminal, navigate to Desktop
-Step 3: git clone Horiseon.git on Desktop via copying SSH link
-Step 4: touch README.MD
-Step 5: touch index.html
-Step 6: mkdir assets
-Step 7: mkdir css
-Step 8: touch style.css
-Step 9: Navigate to Horiseon (main)
-Step 10: code . to draft README.MD
-Step 11: save changes
-Step 12: open GitBash Terminal
-Step 13: git add .
-Step 14: git commit -m"comments"
-Step 15: git pull *habit*
-Step 16: git push
+*GIVEN a webpage meets accessibility standards*
 
-Objective: Complete Code Refactoring Assignment
+*WHEN I view the source code*
 
-Criteria
--Convert HTML tags to Semantic tags while preserving CSS styling. 
+*THEN I find semantic HTML elements*
 
-Changes to index.html
-    
-   Line 7: added link tag to add logo to browser tab
-    
-   Line 8: updated title to Horiseon
-    
-   Line 11 and Line 81: Updated <body></body> tags to <main></main>
-   
-   Line 12 and Line 27: Updated <div></div> to <header></header>
-    
-   Line 14 and Line 26: Updated <div></div> to <nav></nav>
-        
-   Line 28: Updated <div></div> to <figure></figure>
-   
-   Line 30 and Line 60: Updated <div></div> to <section></section>
-   
-   Line 31, Line 39:  Updated <div></div> to <article></article>
-   
-   Line 32 and Line 38: Added <figure></figure> tags to elements
-   
-   Line 33: Added alt tag to <img>
+*WHEN I view the structure of the HTML elements*
 
-   Line 35 and Line 37: Changed <p></p> to <figcaption></figcaption>
+*THEN I find that the elements follow a logical structure independent of styling and positioning*
 
-   Line 41 and Line 49:  Updated <div></div> to <article></article>
-   
-   Line 42 and Line 48: Added <figure></figure> tags to elements
- 
-   Line 43: Added alt tags to <img>
+*WHEN I view the image elements*
 
-   Line 45 and Line 47 Changed <p></p> to <figcaption></figcaption>
+*THEN I find accessible alt attributes*
 
-   Line 51 and Line 59  Updated :<div></div> to <article></article>
-   
-   Line 52 and Line 58 Added: <figure></figure> tags to elements
-   
-   Line 53: Added alt tags to <img>
+*WHEN I view the heading attributes*
 
-   Line 55 and Line 57: Changed <p></p> to <figcaption></figcaption>
+*THEN they fall in sequential order*
 
-   Line 62 and Line 98: Updated <div><div> to <aside><aside>
-   
-   Line 63 and Line 73:  Updated <div></div> to <article></article>
-   
-   Line 64 and Line 72: Added <figure></figure> tags to elements
-   
-   Line 67: Added alt tags to <img>
-   
-   Line 68 and Line: 70 Changed <p></p> to <figcaption></figcaption>
-   
-   Line 74 and Line 83:  Updated <div></div> to <article></article>
-   
-   Line 75 and Line 82: Added <figure></figure> tags to elements
-   
-   Line 78: Added alt tags to <img>
-   
-   Line 79 and Line 81: Changed <p></p> to <figcaption></figcaption>
-   
-   Line 85 and Line 94:  Updated <div></div> to <article></article>
-   
-   Line 86 and Line 93 Added <figure></figure> tags to elements
-   
-   Line 89: Added alt tags to <img>
-   
-   Line 90: and Line 92 Changed <p></p> to <figcaption></figcaption>
-    
-   Line 97: and linr 102  Updated <div></div> to <footer></footer> 
-   
-   Line 98: Updated <h2> to <h3> 
+*WHEN I view the title element*
+
+*THEN I find a concise, descriptive title*
+
+```
+
+ Compliance with Acceptance Criteria
+
+ ```
+*WHEN I view the source code*
+*THEN I find semantic HTML elements*
+```
+Replaced all < div > tags with more decriptive semantic elements
+
+1. Added main tags to replace body
+1. Replaced < div > with < header >, updated style.css with appropriate semantic name
+new code:
+```    
+ <header class="header">
+        <h1>Hori<span class="seo">seo</span>n</h1>
+      <!--Nav Bar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+```
+1. Replaced < div > with < nav > 
+1. Replaced < div > with < header > and < footer > tags
+
+```
+    <footer class="footer">
+        <h3>Made with ❤️️ by Horiseon</h3>
+        <p>
+            &copy; 2019 Horiseon Social Solution Services, Inc.
+        </p>
+    </footer>
+```
 
 
-Changes to style.css
-Updated Elements to match HTML Semantic Updates:
-Line 7, Line 11, Line 18, Line 23, Line 27, Line 35, Line 39, Line 191, and Line 198
+*WHEN I view the title element*
+*THEN I find a concise, descriptive titleConcise Descriptive title*
+I updated the title tags from "website"
+
+![Original Tab](readme_images\Old_Web_Tab.PNG)
+
+To Horiseon, I've also added a logo to the brower tab
+
+Code:
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Added Logo to browser tab-->
+    <link rel= "shortcut icon" href="./assets/images/Logo.PNG">
+    <title>Horiseon</title>
+</head>
+
+Output:
+
+![New Tab](readme_images\new_web_tab.PNG)
