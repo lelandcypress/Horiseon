@@ -83,7 +83,7 @@ new code:
 *THEN I find a concise, descriptive titleConcise Descriptive title*
 I updated the title tags from "website"
 
-![Original Tab](readme_images\Old_Web_Tab.PNG)
+![Original Tab](readme_images/Old_Web_Tab.PNG)
 
 To Horiseon, I've also added a logo to the brower tab
 
@@ -99,4 +99,4 @@ Code:
 
 Output:
 
-![New Tab](readme_images\new_web_tab.PNG)
+![New Tab](readme_images/new_web_tab.PNG)
