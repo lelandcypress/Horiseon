@@ -53,26 +53,8 @@ SO THAT our own site is optimized for search engines
 * Added < main > tags to replace < body >.
 * Replaced < div > with < header >, updated style.css with appropriate semantic name.
 * Replaced < div > with < nav > updated style.css with appropriate semantic name.
-new code:
-```    
- <header class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-      <!--Nav Bar-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-```
+
+![Header and Nav](readme_images/header_nav.PNG)
 
 * Updated < div > to < article >.
 * Updated < div > to < aside >.
@@ -89,16 +71,6 @@ new code:
 * Added strategic line breaks and indentation in code to increase readability.
 
 * Replaced < div > with < footer >.
-
-```
-    <footer class="footer">
-        <h3>Made with ❤️️ by Horiseon</h3>
-        <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
-    </footer>
-```
-
 * Updated the title tags from "website".
 
 ![Original Tab](readme_images/Old_Web_Tab.PNG)
@@ -106,7 +78,7 @@ new code:
 * To Horiseon, I've also added a logo to the brower tab.
 
 Code:
-
+```
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -114,7 +86,7 @@ Code:
     <link rel= "shortcut icon" href="./assets/images/Logo.PNG">
     <title>Horiseon</title>
 </head>
-
+```
 Output:
 
 ![New Tab](readme_images/new_web_tab.PNG)
