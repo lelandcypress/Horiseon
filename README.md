@@ -1,15 +1,24 @@
-Horiseon HTML Refactoring Project
+## **Horiseon HTML Refactoring Project**
+  </br>
 
-Objective: We have been contracted by Horiseon to update their HTML to include semantic tags, improve accessibility, and ensure stylesheet flows in accordance with best practices.
+**Objective**
+</br>
+ We have been contracted by Horiseon to update their HTML to include semantic tags, improve accessibility, and ensure stylesheet flows in accordance with best practices.
 
-CUSTOMER USER STORY
+</br>
+
+#### **User Story**
 ```
 AS A marketing agency
 I WANT a codebase that follows accessibility standards
 SO THAT our own site is optimized for search engines
 ```
+</br>
 
-Acceptance Criteria
+#### **Acceptance Criteria**
+
+</br>
+
 ```
 
 *GIVEN a webpage meets accessibility standards*
@@ -36,16 +45,14 @@ Acceptance Criteria
 
 ```
 
- Compliance with Acceptance Criteria
+</br>
 
- ```
-*WHEN I view the source code*
-*THEN I find semantic HTML elements*
-```
-Replaced all < div > tags with more decriptive semantic elements
+#### **Updates to index.html**
 
-1. Added main tags to replace body
-1. Replaced < div > with < header >, updated style.css with appropriate semantic name
+* Replaced all < div > tags with more decriptive semantic elements
+* Added < main > tags to replace < body >.
+* Replaced < div > with < header >, updated style.css with appropriate semantic name.
+* Replaced < div > with < nav > updated style.css with appropriate semantic name.
 new code:
 ```    
  <header class="header">
@@ -66,8 +73,22 @@ new code:
         </nav>
     </header>
 ```
-1. Replaced < div > with < nav > 
-1. Replaced < div > with < header > and < footer > tags
+
+* Updated < div > to < article >.
+* Updated < div > to < aside >.
+* Wrapped images in < figure > tags to assist in future management of code block.
+* Replaced < p > tags with < figcaption >.
+* Added comments throughout index.html and style.css to document changes and to aid in future maintenence of files.
+
+![Developer Comments](readme_images/developer_comments.PNG)
+
+* Added alt attributes to all images.
+
+![Alt Tags](readme_images/alt_tags.PNG)
+
+* Added strategic line breaks and indentation in code to increase readability.
+
+* Replaced < div > with < footer >.
 
 ```
     <footer class="footer">
@@ -78,14 +99,11 @@ new code:
     </footer>
 ```
 
-
-*WHEN I view the title element*
-*THEN I find a concise, descriptive titleConcise Descriptive title*
-I updated the title tags from "website"
+* Updated the title tags from "website".
 
 ![Original Tab](readme_images/Old_Web_Tab.PNG)
 
-To Horiseon, I've also added a logo to the brower tab
+* To Horiseon, I've also added a logo to the brower tab.
 
 Code:
 
@@ -100,3 +118,10 @@ Code:
 Output:
 
 ![New Tab](readme_images/new_web_tab.PNG)
+
+
+#### **Changes to style.css**
+
+* Updated elements to ensure they matched Semantic HTML renaming.
+* Removed redundant code blocks through the use of grouping.
+![Optimized CSS Code Blocks](readme_images/code_optimization.PNG)
